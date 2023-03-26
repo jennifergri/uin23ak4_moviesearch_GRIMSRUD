@@ -1,6 +1,8 @@
+import React from 'react';
 import SearchResults from "./SearchResults";
+import MovieCards from "./MovieCards";
 
-export default function Layout(){
+export default function Layout({getMovies, movies, setSearch}){
     return(
         <div className="container">
             <header>
@@ -8,7 +10,8 @@ export default function Layout(){
             </header>
             
             <main>
-                <SearchResults/>
+                <SearchResults getMovies={getMovies} setSearch={setSearch}/>
+                <MovieCards movies={movies}/>
             </main>
         </div>
     )

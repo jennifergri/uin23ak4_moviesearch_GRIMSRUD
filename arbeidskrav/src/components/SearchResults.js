@@ -1,4 +1,5 @@
-export default function SearchResults(){
+import React from 'react';
+export default function SearchResults({getMovies}){
     
     //funksjon som gjør at siden ikke skal refreshe seg:
     const handleSubmit = (event) => {
@@ -8,7 +9,7 @@ export default function SearchResults(){
     return(
         <form onSubmit={handleSubmit}>
             <input type="search" placeholder="søk etter film..."/>
-            <button type="submit">Søk</button>
+            <button type="submit" onClick={getMovies}>Søk</button>
         </form>
     )
 }

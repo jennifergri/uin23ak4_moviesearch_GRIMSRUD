@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function MovieCard({img, title, ingress}){
     return(
         <article className="article-card">

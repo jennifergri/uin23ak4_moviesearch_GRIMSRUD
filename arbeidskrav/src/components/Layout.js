@@ -1,3 +1,5 @@
+import SearchResults from "./SearchResults";
+
 export default function Layout(){
     return(
         <div className="container">
@@ -6,8 +8,10 @@ export default function Layout(){
             </header>
             
             <main>
-
+                <SearchResults/>
             </main>
         </div>
     )
 }
+
+//Kilder: kode fra forelesning om matprat og news

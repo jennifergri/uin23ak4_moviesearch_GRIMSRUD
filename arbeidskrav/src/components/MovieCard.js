@@ -8,3 +8,5 @@ export default function MovieCard({img, title, ingress}){
         </article>
     )
 }
+
+//Kilder: kode fra forelesning om matprat og news

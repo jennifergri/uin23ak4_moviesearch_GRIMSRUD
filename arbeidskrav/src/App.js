@@ -1,8 +1,26 @@
 import './App.css';
-import Layout from './components/Layout';
 import './css/main.css';
 
+import { useEffect, useState } from 'react';
+import Layout from './components/Layout';
+
 function App() {
+  //API
+  const [movies, setMovies] = useState([])
+  const [search, setSearch] = useState('james-bond') /*Default på forsiden*/
+    
+  /*http://www.omdbapi.com/?i=tt3896198&apikey=9ebf19a7*/
+  const getMovies = async() => {
+      const response = await fetch (`http://www.omdbapi.com/?i=tt3896198&q=${search}&type=movei&pageSize=10&apikey=9ebf19a7`)
+      const data = await response.json()
+      setMovies(data)
+      console.log(data)
+  }
+
+  useEffect(() => {
+      getMovies()
+  },[])
+
   return (
     <Layout>
       

@@ -9,9 +9,7 @@ export default function MovieCards({movies}){
                 key={index} 
                 poster={movie?.Poster} 
                 title={movie?.Title} 
-                year={movie?.Year}
-                time={movie?.Runtime}
-                genre={movie?.Genre}/>
+                year={movie?.Year}/>
             ))}
         </section>
     )

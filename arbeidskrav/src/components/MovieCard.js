@@ -8,7 +8,7 @@ export default function MovieCard({poster, title, year, time, genre}){
             <p>{year}</p>
             <p>{time}</p>
             <p>{genre}</p>
-            <button>Les mer</button>
+            <button>Mer om filmen</button>
         </article>
     )
 }

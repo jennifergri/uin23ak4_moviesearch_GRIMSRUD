@@ -3,6 +3,7 @@ import './css/main.css';
 
 import { useEffect, useState } from 'react';
 import Layout from './components/Layout';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   //API
@@ -11,10 +12,10 @@ function App() {
     
   /*http://www.omdbapi.com/?i=tt3896198&apikey=9ebf19a7*/
   const getMovies = async() => {
-      const response = await fetch (`http://www.omdbapi.com/?i=tt3896198&s=${search}&apikey=9ebf19a7`)
+      const response = await fetch (`http://www.omdbapi.com/?i=tt3896198&s=${search}&type=movie&apikey=9ebf19a7`)
       const data = await response.json()
-      setMovies(data)
-      console.log(data)
+      setMovies(data.Search)
+      console.log(movies)
   }
 
   useEffect(() => {
@@ -22,7 +23,11 @@ function App() {
   },[])
 
   return (
-    <Layout getMovies={getMovies} movies={movies} setSearch={setSearch}/>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Layout getMovies={getMovies} movies={movies} setSearch={setSearch}/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

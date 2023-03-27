@@ -1,12 +1,11 @@
 import React from 'react';
 
-export default function MovieCard({img, title, ingress}){
+export default function MovieCard({poster, title, year}){
     return(
         <article className="article-card">
-            <img src={img} alt={title}></img>
+            <img src={poster} alt={title}></img>
             <h3>{title}</h3>
-            <p>{ingress}</p>
-            <a href="#">Les mer</a>
+            <p>{year}</p>
         </article>
     )
 }

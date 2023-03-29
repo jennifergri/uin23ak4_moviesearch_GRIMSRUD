@@ -6,7 +6,7 @@ export default function Layout({getMovies, movies, setSearch}){
     return(
         <div className="container">
             <header>
-                <h1>Filmsøk</h1>
+                <h1>MovieSearch</h1>
             </header>
             
             <main>

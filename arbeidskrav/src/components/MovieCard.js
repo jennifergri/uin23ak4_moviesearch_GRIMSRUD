@@ -15,18 +15,19 @@ export default function MovieCard({imdbID}){
   
     useEffect(() => {
         getMovie()
-    },[])
+    },[imdbID])
 
     return(
         <article className="article-card">
             <img src={movie.Poster !== "N/A" ? movie.Poster : "https://cdn.pixabay.com/photo/2016/09/11/18/26/frame-1662287_1280.png"} alt={movie.Title}></img>
             <h3>{movie.Title}</h3>
-            <p>{movie.Year}</p>
-            <p>{movie.Genre}</p>
-            <p>Director: {movie.Director}</p>
-            <p>Actors: {movie.Actors}</p>
-            <p>{movie.Awards}</p>
-            <p>{movie.Plot}</p>
+            <p>Plot: {movie.Plot !== "N/A" ? movie.Plot : "Not Available"}</p>
+            <p>Runtime: {movie.Runtime !== "N/A" ? movie.Runtime : "Not Available"}</p>
+            <p>Published: {movie.Year !== "N/A" ? movie.Year : "Not Available"}</p>
+            <p>Genre: {movie.Genre !== "N/A" ? movie.Genre : "Not Available"}</p>
+            <p>Director: {movie.Director !== "N/A" ? movie.Director : "Not Available"}</p>
+            <p>Actors: {movie.Actors !== "N/A" ? movie.Actors : "Not Available"}</p>
+            <p>Awards: {movie.Awards !== "N/A" ? movie.Awards : "None"}</p>
         </article>
     )
 }

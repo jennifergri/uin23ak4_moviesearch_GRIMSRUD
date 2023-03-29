@@ -33,3 +33,4 @@ function App() {
 export default App;
 
 //Kilder: kode fra forelesning om matprat og news
+//Samarbeidet med Stine og Marianne

@@ -18,3 +18,4 @@ export default function Layout({getMovies, movies, setSearch}){
 }
 
 //Kilder: kode fra forelesning om matprat og news
+//Samarbeidet med Stine og Marianne

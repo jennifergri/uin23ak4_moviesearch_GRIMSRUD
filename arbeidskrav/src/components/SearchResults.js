@@ -22,3 +22,4 @@ export default function SearchResults({getMovies, setSearch}){
 }
 
 //Kilder: kode fra forelesning om matprat
+//Samarbeidet med Stine og Marianne

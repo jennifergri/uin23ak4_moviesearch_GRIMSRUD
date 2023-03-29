@@ -7,12 +7,11 @@ export default function MovieCards({movies}){
             {movies.map((movie, index) =>(
                 <MovieCard 
                 key={index} 
-                poster={movie?.Poster} 
-                title={movie?.Title} 
-                year={movie?.Year}/>
+                imdbID={movie.imdbID}/>
             ))}
         </section>
     )
 }
 
 //Kilder: kode fra forelesning om matprat og news
+//Samarbeidet med Stine og Marianne

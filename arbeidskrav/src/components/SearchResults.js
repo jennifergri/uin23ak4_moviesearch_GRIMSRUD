@@ -15,11 +15,11 @@ export default function SearchResults({getMovies, setSearch}){
     
     return(
         <form onSubmit={handleSubmit}>
-            <input type="search" placeholder="Søk etter film..." onChange={handleSearch}/>
-            <button type="submit" onClick={getMovies}>Søk</button>
+            <input type="search" placeholder="Search for movie..." onChange={handleSearch}/>
+            <input type="submit" onClick={getMovies} value="Search"/>
         </form>
     )
 }
 
-//Kilder: kode fra forelesning om matprat
+//Kilder: Gitcollab og News kode
 //Samarbeidet med Stine og Marianne

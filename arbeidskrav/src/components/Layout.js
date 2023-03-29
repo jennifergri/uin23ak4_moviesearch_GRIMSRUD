@@ -9,13 +9,16 @@ export default function Layout({getMovies, movies, setSearch}){
                 <h1>MovieSearch</h1>
             </header>
             
-            <main>
+            <nav>
                 <SearchResults getMovies={getMovies} setSearch={setSearch}/>
+            </nav>
+            
+            <main>
                 <MovieCards movies={movies}/>
             </main>
         </div>
     )
 }
 
-//Kilder: kode fra forelesning om matprat og news
+//Kilder: Gitcollab og News kode
 //Samarbeidet med Stine og Marianne

@@ -32,5 +32,5 @@ function App() {
 
 export default App;
 
-//Kilder: kode fra forelesning om matprat og news
+//Kilder: Gitcollab og News kode
 //Samarbeidet med Stine og Marianne

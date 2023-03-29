@@ -1,3 +1,54 @@
+/*Fargepallett inspirasjon: https://coolors.co/eff8e2-cecfc7-ada8b6-23022e-573280*/
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #200329;
+  color: #fff;
+}
+body .container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+body .container header {
+  display: flex;
+  justify-content: center;
+}
+body .container header h1 {
+  color: #8656bd;
+  font-size: 60px;
+}
+body .container nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+body .container nav input {
+  padding: 0.5rem;
+}
+body .container main .movies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+body .container main .movie-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 350px;
+  width: 100%;
+  background-color: #3c235a;
+  padding: 1rem;
+  border-radius: 20px;
+}
+body .container main .movie-card img {
+  width: 250px;
+  height: auto;
+}
+body .container main .movie-card span {
+  font-size: 15px;
+  font-weight: lighter;
+}
 
-
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLmNzcyJ9 */
+/*# sourceMappingURL=main.css.map */

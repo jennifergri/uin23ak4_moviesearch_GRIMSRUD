@@ -3,7 +3,7 @@ import MovieCard from './MovieCard';
 
 export default function MovieCards({movies}){
     return(
-        <section>
+        <section className='movies'>
             {movies.map((movie, index) =>(
                 <MovieCard 
                 key={index} 
@@ -13,5 +13,5 @@ export default function MovieCards({movies}){
     )
 }
 
-//Kilder: kode fra forelesning om matprat og news
+//Kilder: Gitcollab og News kode
 //Samarbeidet med Stine og Marianne
